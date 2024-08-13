@@ -3,5 +3,5 @@
 Assignment submission for Meta's Html and Css course Module 3 https://www.coursera.org/learn/html-and-css-in-depth/home/module/3
 
 ## Preview:
-
-- https://raw.githack.com/Vinitkumar041196/lucky-shrub-website/master/index.html
+- CDN: https://rawcdn.githack.com/Vinitkumar041196/lucky-shrub-website/c2ad1e60b0eca1c54892fb624128c3a2f949010e/index.html
+- Latest: https://raw.githack.com/Vinitkumar041196/lucky-shrub-website/master/index.html
