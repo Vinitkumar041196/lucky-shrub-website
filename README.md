@@ -4,4 +4,4 @@ Assignment submission for Meta's Html and Css course Module 3 https://www.course
 
 ## Preview:
 
-https://raw.githack.com/Vinitkumar041196/lucky-shrub-website/master/index.html
+- https://raw.githack.com/Vinitkumar041196/lucky-shrub-website/master/index.html
