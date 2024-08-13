@@ -3,9 +3,7 @@
     --logo-color-light: #b3ffcb;
     --logo-color-lighter: #b3ffcb80;
     --banner-background-color:var(--logo-color-light); 
-    /* #b8daa5; */
     --banner-text-color:var(--logo-color);
-    /* #457243; */
 }
 
 * {
@@ -18,14 +16,14 @@ body {
     font-family: "Poppins", sans-serif;;
 }
 
-/*header with logo*/
+/* header with logo */
 header img{
     display: block;
     margin: 0 auto 1rem auto;
-    width: 5rem;
+    width: 7rem;
 }
 
-/* nav bar starts*/
+/* nav bar starts */
 nav {
     margin-top: 0.5rem;
     border-radius: 0.5rem;
@@ -55,7 +53,7 @@ nav a:hover{
     color: white;
     border-radius: 0.5rem;
 }
-/* nav bar end*/
+/* nav bar end */
 
 /* banner start */
 .banner {
@@ -66,8 +64,6 @@ nav a:hover{
     display: flex;
 }
 
-/* TODO write media query for banner resize */
-
 .banner-heading {
     flex: 1;
     width: 50%;
@@ -75,15 +71,15 @@ nav a:hover{
     align-self: center;
 }
 
-.banner-heading h2{
+.banner-heading .banner-text{
     color: var(--banner-text-color);
-    font-size: x-large;
+    font-size: 2.2rem;
     text-align: center;
 }
 
-.banner-heading .banner-discount{
+.banner-heading .banner-large-text{
     color: var(--banner-text-color);
-    font-size: xxx-large;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -91,12 +87,12 @@ nav a:hover{
     color: var(--logo-color);
 }
 
-.banner-heading h3{
+.banner-heading .banner-badge-text{
     background-color: var(--banner-text-color);
     color: white;
-    font-size: xx-large;
+    font-size: 2rem;
     border-radius: 2rem;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 10%;
     width: 80%;
 }
@@ -113,7 +109,9 @@ nav a:hover{
     object-fit: cover;
     object-position: 10% 20%;
 }
+/* banner end */
 
+/* blog start */
 .blogs {
     display: flex;
     flex-wrap: wrap;
@@ -126,19 +124,17 @@ nav a:hover{
     background-color: var(--logo-color-lighter);
     border-radius: 0.5rem;
     color: var(--logo-color);
-    /* color: gray; */
     padding: 0.5rem;
 }
 
 .blog:hover{
     background-color: var(--logo-color);
     color: var(--logo-color-light);    
-    /* color: lightgray; */
     transform: scale(105%);
 }
 
 .blog .blog-heading{
-    font-size: medium;
+    font-size: 1rem;
     text-align: left;
     padding: 0.5rem;
 }
@@ -148,7 +144,6 @@ nav a:hover{
 }
 
 .blog-image img{
-    /* display: block; */
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -156,12 +151,13 @@ nav a:hover{
     border-radius: 0.5rem;
 }
 
-.blogs .blog-summary{
+.blog .blog-summary{
     display: block;
-    font-size: small;
+    font-size: 0.8rem;
     max-height: 30%;
     padding: 0.5rem;
 }
+/* banner end*/
 
 /* footer start*/
 footer {
@@ -194,8 +190,70 @@ footer img {
 footer .fa{
     text-decoration: unset;
     text-align: end;
-    font-size: x-large;
+    font-size: 1.5rem;
     color: var(--logo-color);
     padding-left: 0.5rem;
 }
 /* footer end*/
+
+@media only screen and (max-width: 768px) {
+    nav a{
+        font-size: 1.5rem;
+    }
+
+    .banner {
+        display: block;
+    }
+
+    .banner-heading {
+        width: 90%;
+        margin: 1rem;
+    }
+
+    .banner-heading .banner-text{
+        font-size: 1rem;
+    }
+    .banner-heading .banner-large-text{
+        font-size: 2rem;
+    }
+    .banner-heading .banner-small-text{
+        font-size: 0.8rem;
+    }
+
+    .banner-heading .banner-badge-text{
+        margin-top: 2%;
+        font-size: 1.5rem;
+    }
+
+    .banner-background img{
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+
+    .blog .blog-heading{
+        font-size: 0.8rem;
+    }
+
+    .blog .blog-summary{
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .banner {
+        display: block;
+    }
+
+    .banner-heading {
+        width: 90%;
+        margin: 1rem;
+    }
+
+    .banner-background{
+        width: 100%;
+        height: 100%;
+    }
+
+    .blogs{
+        display: block;
+    }
+}
